@@ -9,7 +9,7 @@ This is a very simple image, it downloads the latest version from the webiste, b
 To run with docker use 
 ```
  docker run \
-    --name "Minecraft Bedrock Server" \
+    --name MinecraftBedrockServer \
     --interactive \
     --tty \
     --detach \
@@ -20,7 +20,7 @@ To run with docker use
  you can set a volume to edit the server setting or upload your own worlds by using
  ```
   docker run \
-    --name "Minecraft Bedrock Server" \
+    --name MinecraftBedrockServer \
     --interactive \
     --tty \
     --detach \
@@ -34,7 +34,7 @@ To run with docker use
   you can add more variables such as world name, port to use, Game Mode, Server Name, Level Name, folder location inside docker, if you change the MCPORT you should also change the ports exposed (UDP and TCP) and if you change MCSERVERFOLDER make sure the volume path inside docker matches the  path
   ```
     docker run \
-      --name "Minecraft Bedrock Server" \
+      --name MinecraftBedrockServer \
       --interactive \
       --tty \
       --detach \
@@ -63,3 +63,4 @@ To run with docker use
 | MCFolder | /home/bedrockserver | Folder where everything is saved |
 
   I'm open to any suggestions or changes.
+  
