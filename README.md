@@ -1,4 +1,8 @@
-# MCPEBedrockServer
+# Minecraft Bedrock Server - csdevto/mcbsrv
+Docker hub: https://hub.docker.com/r/csdevto/mcbsrv
+
+Github: https://github.com/csdevto/MCBedrockServer
+
 After checking online for a good Minecraft Bedrock Server for docker that updates after every restart, I decided to create my own Docker Image.
 This is a very simple image, it downloads the latest version from the webiste, backs up server.properties, whitelist.json and permissions.json and restores them once it has been updated.
 
