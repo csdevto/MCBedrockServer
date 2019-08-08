@@ -1,12 +1,15 @@
 FROM buildpack-deps:bionic-curl
 
-ENV MCPORT=19132
-ENV MCPORT=19132/UDP
-ENV MCSERVERFOLDER=/home/bedrockserver
-ENV WORLD="Bedrock Server"
+ENV DockerSet="YES"
+ENV MCPort=19132
+ENV MCFolder=/home/bedrockserver
+ENV LevelName="Bedrock Server"
+ENV ServerName="Bedrock Server"
+ENV GameMode="survival"
 
-EXPOSE $MCPORT
 
+EXPOSE $MCPort
+EXPOSE $MCPort/UPD
 # install curl and unzip
 RUN apt-get update
 RUN apt-get install -y curl unzip
